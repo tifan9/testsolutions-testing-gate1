@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 
 public class ElementPage extends HomePage {
     private By WebTable = By.xpath("//li[@id='item-3']/span[text()='Web Tables']");
-    private By linkMenu = By.xpath("");
+    private By linkMenu = By.xpath("//li[@id='item-5']/span[text()='Links']");
     private By textBox = By.xpath("//li[@id='item-0']/span[text()='Text Box']");
 
     public TextBoxPage clickTextBox(){

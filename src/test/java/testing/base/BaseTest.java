@@ -13,6 +13,7 @@ public class BaseTest {
     protected BasePage basePage;
     protected HomePage homePage;
     private String url = "https://toolsqa.com/";
+    // this is the sub page of the first website link
     private String url1 ="https://demoqa.com/";
 
     @BeforeClass
