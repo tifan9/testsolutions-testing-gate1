@@ -12,7 +12,7 @@ public class LinkTest extends BaseTest {
         String actualResponse = linkPage.getResponse();
         Assert.assertEquals(actualResponse.contains("201")
                 && actualResponse.contains("Created"),
-                "\n Actual Response (" + actualResponse +")\n Does not Contain '201' and 'Created' \n"
+                "\n Actual Response (" + actualResponse + ")\n Does not Contain '201' and 'Created' \n"
                 );
     }
 
