@@ -10,10 +10,10 @@ public class LinkTest extends BaseTest {
         var linkPage = homePage.goToElement().clickLinks();
         linkPage.clickCreateLink();
         String actualResponse = linkPage.getResponse();
-        Assert.assertEquals(actualResponse.contains("201")
-                && actualResponse.contains("Created"),
+        Assert.assertTrue(
+                actualResponse.contains("201") && actualResponse.contains("Created"),
                 "\n Actual Response (" + actualResponse + ")\n Does not Contain '201' and 'Created' \n"
-                );
+        );
     }
 
 

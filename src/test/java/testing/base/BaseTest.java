@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
+import static com.testing.pages.BasePage.delay;
 import static com.testing.utilities.Utility.setUtilityDriver;
 
 public class BaseTest {
@@ -30,11 +31,9 @@ public class BaseTest {
         homePage = new HomePage();
 
     }
-
-//    @AfterMethod
-//    public void
     @AfterClass
-    public void tearDown(){
+    public void tearDown() {
+        delay(3000);
         driver.quit();
     }
 }
